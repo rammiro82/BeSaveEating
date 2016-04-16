@@ -53,3 +53,6 @@ captures/
 ### Android Patch ###
 gen-external-apklibs
 
+profiles_settings.xml
+Project_Default.xml
+RamiroGarcia.xml
