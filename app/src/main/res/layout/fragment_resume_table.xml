@@ -1,0 +1,41 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.keepcoding.rgs.besaveeating.fragments.ResumeTableFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|top">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginTop="63dp"
+            android:text="0"
+            android:id="@+id/txtNumDishes" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtMinus"
+            android:id="@+id/btnDishRemove"
+            android:layout_marginTop="63dp"
+            android:layout_toRightOf="@+id/txtNumDishes"
+            android:layout_toEndOf="@+id/txtNumDishes" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtPlus"
+            android:id="@+id/btnDishAdd"
+            android:layout_alignTop="@+id/btnDishRemove"
+            android:layout_toRightOf="@+id/btnDishRemove"
+            android:layout_toEndOf="@+id/btnDishRemove" />
+
+    </RelativeLayout>
+</FrameLayout>

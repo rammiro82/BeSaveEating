@@ -8,7 +8,7 @@ import java.util.List;
  */
 public class Dish {
 
-    enum POSSIBLE_ALLERGENS {GLUTEN, EGG, FISH, PEANUTS, SOYBEANS, MILK};
+    public enum POSSIBLE_ALLERGENS {GLUTEN, EGG, FISH, PEANUTS, SOYBEANS, MILK};
 
     String name;
     String description;
@@ -20,6 +20,13 @@ public class Dish {
         this.name = name;
         this.description = description;
         this.price = price;
+    }
+
+    public Dish(String name, String description, Float price, List<String> allergens) {
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.allergens = allergens;
     }
 
     public String getName() {

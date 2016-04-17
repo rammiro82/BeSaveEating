@@ -24,4 +24,8 @@ public class Restaurant {
     public int getNumTables(){
         return tables.size();
     }
+
+    public void addTable(Table table){
+        this.tables.add(table);
+    }
 }
